@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <div className="h-[6180px] w-[1101px]">
       <div className="flex flex-col mr-[75px]">
-        <div className="mt-[150px] mb-[200px]">
+        <div className="mt-[100px] mb-[200px]">
           <Main_page/>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-[200px]">
           <EventCard />
         </div>
         <div className="flex justify-center">
