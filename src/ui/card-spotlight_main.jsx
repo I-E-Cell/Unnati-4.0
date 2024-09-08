@@ -1,18 +1,21 @@
 import CardSpotlight from "./card-spotlight";
+import whiteLine from "../../public/whiteline.png";
 
 export function CardSpotlightDemo() {
   return (
     <CardSpotlight className="h-[500px] w-[446px] rounded-xl px-12 py-[72px]">
-      <div className="h-[86px] flex-col justify-start items-start gap-5 flex">
-        <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
-          13 September 2024
+      <div className="text-neutral-200 mt-2 relative z-20">
+        <div className="h-[86px] flex-col justify-start items-start gap-5 flex mb-[57px]">
+          <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
+            13 September 2024
+          </div>
+          <div className="self-stretch text-white text-2xl font-['Helvetica Rounded'] pb-4">
+            Round 1- Brand Battle
+            <div className="py-5">
+              <img src={whiteLine} />
+            </div>
+          </div>
         </div>
-        <div className="self-stretch text-white text-2xl font-['Helvetica Rounded'] pb-4">
-          Round 1- Brand Battle
-        </div>
-      </div>
-
-      <div className="text-neutral-200 mt-7 relative z-20">
         <ul className="list-none  mt-1">
           <div className="justify-start items-center gap-2 inline-flex">
             <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
