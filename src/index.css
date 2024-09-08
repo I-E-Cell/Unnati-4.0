@@ -6,6 +6,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: #000;
+}
+
+.formGradient {
+  background: linear-gradient(270deg, #013FB8 24.24%, #EF4477 100%);
 }
