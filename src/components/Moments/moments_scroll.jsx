@@ -4,7 +4,7 @@ import { ParallaxScroll } from "./parllax-scroll";
 
 export function ParallaxScrollDemo() {
   return (
-    <>
+    <div className="md:w-[1071px]">
       <div className="mb-[100px] flex flex-col">
         <div className="flex justify-center mb-10">
           <div className="h-[79px] flex-col justify-center items-center inline-flex">
@@ -20,7 +20,7 @@ export function ParallaxScrollDemo() {
           <ParallaxScroll images={images} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -7,24 +7,24 @@ import RuleBook from "../rulebook/ruleBook";
 
 const Hero = () => {
   return (
-    <div className="h-[6180px] w-[1201px]">
-      <div className="flex flex-col mr-[75px]">
-        <div className="mt-[100px] mb-[100px]">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col space-y-16 sm:space-y-24 lg:space-y-32">
+        <div className="mt-8 sm:mt-16 lg:mt-24">
           <Main_page />
         </div>
-        <div className="mb-[100px]">
+        <div className="lg:ml-0 sm:ml-[320px]">
           <ParallaxScrollDemo />
         </div>
-        <div className="flex justify-center mb-[200px] mr-10">
+        <div className="flex justify-center lg:ml-0 sm:ml-[320px]">
           <EventCard />
         </div>
-        <div className="w-[90%] flex justify-end mr-10">
+        <div className="w-full flex justify-end lg:ml-0 md:ml-[300px] sm:ml-[320px]">
           <RuleBook />
         </div>
-        <div className="mt-[120px]">
+        <div>
           <FormContainer />
         </div>
-        <div className="flex justify-center mt-[200px]">
+        <div className="flex justify-center">
           <Page />
         </div>
       </div>

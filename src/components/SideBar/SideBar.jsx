@@ -4,7 +4,7 @@ import RulebookDownload from "../../assets/Unnati_image.png";
 
 const SideBar = () => {
   return (
-    <div className="w-[322px] h-[811px] mt-[16px]">
+    <div className="w-[322px] h-[811px] mt-[16px] lg:block md:hidden inline-flex">
       <div>
         <div className="h-[315px] pl-[59.71px] pr-[59.72px] pt-[237px] pb-[26px] bg-black rounded-2xl justify-center items-center inline-flex" style={{
             backgroundImage: `url(${RegisterNowBG})`, // Set background image
