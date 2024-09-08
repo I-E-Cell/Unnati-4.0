@@ -3,8 +3,8 @@ import CardSpotlight from "./card-spotlight";
 export function CardSpotlightDemo() {
   return (
     <CardSpotlight className="h-[500px] w-[446px] rounded-xl px-12 py-[72px]">
-      <div className="h-[86px] flex-col justify-start items-start gap-5 flex">
-        <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
+      <div className="h-[86px]   flex-col justify-start items-start gap-5 flex">
+        <div className="self-stretch z-40 text-start  text-white text-[32px] font-['Helvetica Rounded']">
           13 September 2024
         </div>
         <div className="self-stretch text-white text-2xl font-['Helvetica Rounded'] pb-4">
