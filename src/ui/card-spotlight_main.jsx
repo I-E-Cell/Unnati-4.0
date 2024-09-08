@@ -3,8 +3,8 @@ import whiteLine from "../../public/whiteline.png";
 
 export function CardSpotlightDemo() {
   return (
-    <CardSpotlight className="h-[500px] w-[446px] rounded-xl px-12 py-[72px]">
-      <div className="text-neutral-200 mt-2 relative z-20">
+    <CardSpotlight className="h-[450px] w-[446px] rounded-xl px-12 py-[50px]">
+      <div className="text-neutral-200 relative z-20">
         <div className="h-[86px] flex-col justify-start items-start gap-5 flex mb-[57px]">
           <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
             13 September 2024

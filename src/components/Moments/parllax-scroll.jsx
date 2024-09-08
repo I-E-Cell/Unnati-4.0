@@ -1,42 +1,49 @@
+"use client";
+import PropTypes from 'prop-types';
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import PropTypes from "prop-types";
-import { cn } from "../../utils/utils";
+import { cn } from '../../utils/utils';
+// Remove Image import from next/image
+// import Image from "next/image";
 
 export const ParallaxScroll = ({ images, className }) => {
   const gridRef = useRef(null);
   const { scrollYProgress } = useScroll({
-    container: gridRef,
-    offset: ["start start", "end start"],
+    container: gridRef, // remove this if your container is not fixed height
+    offset: ["start start", "end start"], // remove this if your container is not fixed height
   });
 
-  // Transform scroll position to translateY values
-  const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-  // Divide images into three parts for grid layout
   const third = Math.ceil(images.length / 3);
+
   const firstPart = images.slice(0, third);
   const secondPart = images.slice(third, 2 * third);
   const thirdPart = images.slice(2 * third);
 
   return (
     <div
-      className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
+      className={cn("h-[800px] items-start overflow-y-auto w-full", className)}
       ref={gridRef}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-40 px-10">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-20 px-10"
+        ref={gridRef}
+      >
         <div className="grid gap-10">
           {firstPart.map((el, idx) => (
             <motion.div
-              key={`grid-1-${idx}`}
               style={{ y: translateFirst }}
+              key={`grid-1-${idx}`}
             >
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                height="400"
+                width="400"
                 alt="thumbnail"
               />
             </motion.div>
@@ -45,12 +52,14 @@ export const ParallaxScroll = ({ images, className }) => {
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
             <motion.div
-              key={`grid-2-${idx}`}
               style={{ y: translateSecond }}
+              key={`grid-2-${idx}`}
             >
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                height="400"
+                width="400"
                 alt="thumbnail"
               />
             </motion.div>
@@ -59,12 +68,14 @@ export const ParallaxScroll = ({ images, className }) => {
         <div className="grid gap-10">
           {thirdPart.map((el, idx) => (
             <motion.div
-              key={`grid-3-${idx}`}
               style={{ y: translateThird }}
+              key={`grid-3-${idx}`}
             >
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                height="400"
+                width="400"
                 alt="thumbnail"
               />
             </motion.div>
@@ -75,6 +86,7 @@ export const ParallaxScroll = ({ images, className }) => {
   );
 };
 
+// Add PropTypes for validation
 ParallaxScroll.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string).isRequired,
   className: PropTypes.string,
