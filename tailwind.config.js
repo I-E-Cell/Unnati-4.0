@@ -14,7 +14,7 @@ export default {
         sm: '400px',
         md: '768px',
         lg: '1200px'
-      },
+      }
     },
   },
   plugins: [],
