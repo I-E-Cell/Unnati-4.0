@@ -1,8 +1,10 @@
-export default function Checkbox({ label, register }) {
+export default function Radio({ label, name, value, register }) {
     return (
         <div className='flex justify-start items-center gap-2'>
             <input
-                type="checkbox"
+                type="radio"
+                name={name}
+                value={value}
                 {...register}
                 className="rounded-full w-4 h-4"
             />
