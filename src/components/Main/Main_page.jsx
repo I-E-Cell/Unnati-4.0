@@ -6,6 +6,7 @@ import olaLogo from "../../../public/ola.png";
 import uberLogo from "../../../public/uber.png";
 import facebookLogo from "../../../public/fb.png";
 import cadburyLogo from "../../../public/cadbury.png";
+import Unnati from "../../../public/UNNATI.png";
 import { gsap } from "gsap";
 
 const items = [
@@ -23,7 +24,7 @@ const itemPositions = [
   { top: "36%", left: "90%" },
   { top: "75%", left: "70%" },
   { top: "74%", left: "20%" },
-  { top: "10%", left: "65%" },
+  { top: "-5%", left: "65%" },
 ];
 
 const Main_page = () => {
@@ -54,10 +55,14 @@ const Main_page = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="text-8xl font-thin tracking-wider mb-4">
-        <span className="text-blue-400">UNNATI</span>
+        <span className="text-blue-400">
+          <img src={Unnati} />
+        </span>
       </div>
       <div className="text-white font-thin text-3xl mb-4">EDITION 4.0</div>
-      <div className="text-xl font-bold mb-8">Thrive in Chaos, Lead The Game</div>
+      <div className="text-xl font-bold mb-8">
+        Thrive in Chaos, Lead The Game
+      </div>
       <div className="flex space-x-4">
         <button className="bg-white text-black px-6 py-2 rounded-full flex items-center">
           Get Started
@@ -100,11 +105,11 @@ const Main_page = () => {
               left: itemPositions[index].left,
             }}
           >
-              <img
-                src={item.img}
-                alt={`Logo ${index}`}
-                className="w-16 h-16 object-contain"
-              />
+            <img
+              src={item.img}
+              alt={`Logo ${index}`}
+              className="w-16 h-16 object-contain"
+            />
           </div>
         ))}
       </div>
