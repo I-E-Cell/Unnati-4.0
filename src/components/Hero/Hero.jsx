@@ -1,6 +1,7 @@
 import Page from "../Bento/Page";
 import FormContainer from "../FormContainer";
 import Main_page from "../Main/Main_page";
+import Prizes from "../Prizes";
 import EventCard from "../RoadMap/RoadMap_main";
 import RuleBook from "../rulebook/ruleBook";
 
@@ -14,6 +15,9 @@ const Hero = () => {
         
         <div className="flex  justify-center w-[100%] items-center mt-[-150px]">
           <EventCard />
+        </div>
+        <div className="flex  justify-center w-[100%] items-center mt-[-150px]">
+          <Prizes />
         </div>
         <div className="w-[100%] flex justify-center items-center">
           <RuleBook/>
