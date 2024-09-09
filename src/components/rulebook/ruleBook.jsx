@@ -4,7 +4,7 @@ import CardTwo from './card2'
 
 const ruleBook = () => {
   return (
-    <div className='flex gap-[10%]'>
+    <div className='w-[100%] h-[650px] flex gap-[80px] justify-center items-center'>
         <CardOne/>
         <CardTwo/>
     </div>

@@ -6,15 +6,15 @@ import RuleBook from '../rulebook/ruleBook'
 
 const Hero = () => {
   return (
-    <div className="h-[6180px] w-[1201px]">
-      <div className="flex flex-col mr-[75px]">
+    <div className=" w-[100%] bg-[#000] mt-[13px] mb-[13px] rounded-[40px]">
+      <div className="flex flex-col gap-[150px]">
         <div className="mt-[100px] mb-[200px]">
           <Main_page/>
         </div>
-        <div className="flex justify-center mb-[200px] mr-10">
+        <div className="flex justify-center w-[100%] items-center mt-[-150px]">
           <EventCard />
         </div>
-        <div className="w-[90%] flex justify-end mr-10">
+        <div className="w-[100%] flex justify-center items-center">
           <RuleBook/>
         </div>
         <div className="mt-[120px]">

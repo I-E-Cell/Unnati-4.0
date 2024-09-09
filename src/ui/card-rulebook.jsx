@@ -3,10 +3,10 @@ import CardSpotlight from "./card-spotlight";
 
 export function CardRuleBook() {
   return (
-    <CardSpotlight className="h-[554px] w-[443px] rounded-xl px-12 py-[72px] text-white hover:text-white">
+    <CardSpotlight className="h-[500px] w-[400px] rounded-xl px-[16px]  py-[20px] text-white hover:text-white">
       <div className=" flex flex-col h-full">
         <h2 className="text-lg z-40 font-bold mb-4">Important Guidelines</h2> 
-        <div className="space-y-4 z-40 text-xs">
+        <div className="space-y-4 z-40 text-[12px]">
           <p>All the teams should be seated by 17:00 hrs in the Manekshaw Hall.</p>
           <p>All the teams in the hall will be informed about the event flow and how they are going to pitch team-wise.</p>
           <p>The participants are requested to make their own teams of at least 2-3 members. We expect good cooperation from you guys since this is done to promote interaction among you.</p>
