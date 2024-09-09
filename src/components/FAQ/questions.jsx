@@ -54,8 +54,8 @@ const Questions = () => {
   };
 
   return (
-    <div className='w-full p-8'>
-      <section className='text-white p-6 rounded-lg shadow-lg'>
+    <div className='w-full'>
+      <section className='text-white rounded-lg shadow-lg'>
         <div className='space-y-4'>
           {faqs.map((faq, index) => (
             <div
@@ -68,7 +68,7 @@ const Questions = () => {
                 <div className='flex-1 ml-4'>
                   <p className='text-base'>{faq.question}</p>
                 </div>
-                <div className='absolute top-2 right-2 flex items-center justify-center text-white transition-transform duration-300'>
+                <div className='absolute top-6 right-2 flex items-center justify-center text-white transition-transform duration-300'>
                   {activeIndex === index ? <MinusIcon /> : <PlusIcon />}
                 </div>
               </div>
