@@ -11,7 +11,7 @@ function App() {
       <div className="w-[20%] hidden md:hidden lg:block fixed right-[20px]">
         <SideBar />
       </div>
-      <div className="w-[69%] ml-[9%] overflow-y-auto flex justify-center items-center no-scrollbar">
+      <div className="w-[69%] fixed  rounded-3xl my-[13px] ml-[9%] overflow-x-hidden overflow-y-scroll flex justify-center items-center no-scrollbar">
         <Hero/>
       </div>
     </div>
