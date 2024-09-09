@@ -1,6 +1,7 @@
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/SideBar/SideBar";
+// import Footer from "./components/footer/footer"; // Changed to uppercase
 
 function App() {
   return (
