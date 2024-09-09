@@ -4,15 +4,15 @@ import SideBar from "./components/SideBar/SideBar";
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row ">
-      <div className="lg:fixed lg:top-0 lg:left-0 w-full lg:w-auto lg:inline-flex sm:hidden md:hidden">
+    <div className="flex gap-[2%] no-scrollbar">
+      <div className=" w-[7%] hidden md:hidden lg:block fixed left-[20px]">
         <Navbar />
       </div>
-      <div className="lg:fixed lg:top-0 lg:right-0 w-full lg:w-auto lg:inline-flex sm:hidden md:hidden">
+      <div className="w-[20%] hidden md:hidden lg:block fixed right-[20px]">
         <SideBar />
       </div>
-      <div className="flex justify-center lg:ml-[200px] md:">
-        <Hero />
+      <div className="w-[69%] fixed  rounded-3xl my-[13px] ml-[9%] overflow-x-hidden overflow-y-scroll flex justify-center items-center no-scrollbar">
+        <Hero/>
       </div>
     </div>
   );
