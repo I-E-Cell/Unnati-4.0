@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="w-full flex justify-end lg:ml-0 md:ml-[300px] sm:ml-[320px]">
           <RuleBook />
         </div>
-        <div>
+        <div className="inline-flex md:hidden sm:hidden">
           <FormContainer />
         </div>
         <div className="flex justify-center">

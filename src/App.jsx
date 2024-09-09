@@ -4,7 +4,7 @@ import SideBar from "./components/SideBar/SideBar";
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row ">
       <div className="lg:fixed lg:top-0 lg:left-0 w-full lg:w-auto lg:inline-flex sm:hidden md:hidden">
         <Navbar />
       </div>

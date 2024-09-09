@@ -1,9 +1,19 @@
-const smoothscroll = ({children}) => {
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
+import Scrollbar from 'smooth-scrollbar';
+import { useEffect } from 'react';
 
-export default smoothscroll
+const SmoothScroll = () => {
+  useEffect(() => {
+    const options = {
+      damping: 0.07,
+    };
+    const scrollbar = Scrollbar.init(document.body, options);
+
+    return () => {
+      if (scrollbar) scrollbar.destroy();
+    };
+  }, []);
+
+  return null;
+};
+
+export default SmoothScroll;
