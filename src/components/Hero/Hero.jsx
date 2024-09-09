@@ -2,7 +2,7 @@ import Page from "../Bento/Page";
 import FormContainer from "../FormContainer";
 import Main_page from "../Main/Main_page";
 import EventCard from "../RoadMap/RoadMap_main";
-import RuleBook from '../rulebook/ruleBook'
+import RuleBook from "../rulebook/ruleBook";
 
 const Hero = () => {
   return (
@@ -18,13 +18,12 @@ const Hero = () => {
         <div className="w-[100%] flex justify-center items-center">
           <RuleBook/>
         </div>
-        <div className="mt-[120px]">
-          <FormContainer/>
+        <div className="inline-flex md:hidden sm:hidden">
+          <FormContainer />
         </div>
-        <div className="flex justify-center mt-[200px]">
-          <Page/>
+        <div className="flex justify-center">
+          <Page />
         </div>
-
       </div>
     </div>
   );
