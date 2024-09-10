@@ -221,10 +221,7 @@ export default function Form() {
                     label="Member 2 Name"
                     placeholder="Enter The Number Of Members In Your Team"
                     register={register('member2Name', {
-                        required: {
-                            value: true,
-                            message: 'Member 2 Name is required.'
-                        }
+                        required: false
                     })}
                     error={errors?.member2Name?.message}
                 />
@@ -232,10 +229,7 @@ export default function Form() {
                     label="Member 2 Reg. no."
                     placeholder="Enter The Number Of Members In Your Team"
                     register={register('member2RegNo', {
-                        required: {
-                            value: true,
-                            message: 'Member 2 Reg. no. is required.'
-                        }
+                        required: false
                     })}
                     error={errors?.member2RegNo?.message}
                 />
@@ -243,10 +237,7 @@ export default function Form() {
                     label="Member 2 WhatsApp No."
                     placeholder="Enter The Number Of Members In Your Team"
                     register={register('member2WhatsappNo', {
-                        required: {
-                            value: true,
-                            message: 'Member 2 WhatsApp No. is required.'
-                        },
+                        required: false,
                         pattern: {
                             value: /^[6-9]\d{9}$/,
                             message: 'Please provide a valid Mobile number'
@@ -258,10 +249,7 @@ export default function Form() {
                     label="Member 2 Email"
                     placeholder="Enter The Number Of Members In Your Team"
                     register={register('member2Email', {
-                        required: {
-                            value: true,
-                            message: 'Member 2 Email is required.'
-                        },
+                        required: false,
                         pattern: {
                             value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                             message: 'Enter a valid E-mail ID'

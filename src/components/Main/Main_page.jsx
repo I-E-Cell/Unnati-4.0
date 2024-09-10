@@ -8,6 +8,7 @@ import facebookLogo from "../../../public/fb.png";
 import cadburyLogo from "../../../public/cadbury.png";
 import Unnati from "../../../public/UNNATI.png";
 import { gsap } from "gsap";
+import Form from "../Form/Form";
 
 const items = [
   { img: amazonLogo, parallaxSpeed: 0.08 },
@@ -102,7 +103,7 @@ const Main_page = () => {
             />
           </svg>
         </button>
-        <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center"
+        <button className="bg-transparent border border-white px-6 py-2 rounded-full lg:flex items-center hidden"
         onClick={scrollToPrizes} // Add click handler here
         >
           View Prizes
@@ -119,6 +120,24 @@ const Main_page = () => {
             />
           </svg>
         </button>
+        <a href="/Form"className="lg:hidden">
+        <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center"
+        >
+          Register Now
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 ml-2"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        </a>
       </div>
       <div ref={galleryRef} className="absolute inset-0 pointer-events-none">
         {items.map((item, index) => (
