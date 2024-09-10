@@ -1,11 +1,21 @@
+import { useMutation } from "@tanstack/react-query";
 import Checkbox from "./Checkbox";
 import FormInput from "./FormInput";
 import Radio from "./Radio";
 import SubmitButton from "./SubmitButton";
 import { useForm } from 'react-hook-form'
+import { insertResponseApi } from "./../../services/insertResponseApi";
+import toast from "react-hot-toast";
 
 export default function Form() {
-    const { register, getValues, handleSubmit, formState: { errors } } = useForm({
+    const { mutate } = useMutation({
+        mutationKey: ['response'],
+        mutationFn: async (data) => insertResponseApi(data),
+        onSuccess: onSuccess,
+        onError: onError
+    });
+
+    const { register, getValues, handleSubmit, formState: { errors }, reset } = useForm({
         defaultValues: {
             teamName: '',
             teamLeaderName: '',
@@ -17,7 +27,7 @@ export default function Form() {
             isInterBranch: false,
             member1Name: '',
             member1RegNo: '',
-            member1WhatappNo: '',
+            member1WhatsappNo: '',
             member1Email: '',
             member2Name: '',
             member2RegNo: '',
@@ -26,14 +36,38 @@ export default function Form() {
             team: ''
         }
     });
-    console.log(errors);
 
+    function onSuccess() {
+        reset();
+        toast.success('Response submitted successfully!');
+    }
+
+    function onError() {
+        toast.error('Internal Server Error!');
+    }
 
     function onSubmit() {
-        const { team } = getValues();
-        console.log(team);
+        const { teamName, teamLeaderName, leaderBranchName, leaderWhatsapp, leaderEmail, numberOfMembers, isThereGirl, isInterBranch, member1Name, member1RegNo, member1WhatsappNo, member1Email, member2Name, member2RegNo, member2WhatsappNo, member2Email, team } = getValues();
 
-        console.log(getValues());
+        mutate({
+            teamName,
+            teamLeaderName,
+            leaderBranchReg: leaderBranchName,
+            leaderWhatsapp,
+            leaderEmail,
+            numberOfMembers,
+            isThereGirl,
+            isTeamInterBranch: isInterBranch,
+            member1Name,
+            member1Reg: member1RegNo,
+            member1Whatsapp: member1WhatsappNo,
+            member1Email,
+            member2Name,
+            member2Reg: member2RegNo,
+            member2Whatsapp: member2WhatsappNo,
+            member2Email,
+            referral: team
+        });
     }
 
     return (
@@ -156,7 +190,7 @@ export default function Form() {
                 <FormInput
                     label="Member 1 WhatsApp No."
                     placeholder="Enter The Number Of Members In Your Team"
-                    register={register('member1WhatappNo', {
+                    register={register('member1WhatsappNo', {
                         required: {
                             value: true,
                             message: 'Member 1 WhatsApp No. is required.'
@@ -166,7 +200,7 @@ export default function Form() {
                             message: 'Please provide a valid Mobile number'
                         }
                     })}
-                    error={errors?.member1WhatappNo?.message}
+                    error={errors?.member1WhatsappNo?.message}
                 />
                 <FormInput
                     label="Member 1 E-mail"

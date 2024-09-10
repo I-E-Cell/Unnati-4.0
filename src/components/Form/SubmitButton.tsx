@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from './../assets/arrow-right.png';
+import arrow from './../../assets/arrow-right.png';
 
 export default function SubmitButton({ onClick }) {
     return (

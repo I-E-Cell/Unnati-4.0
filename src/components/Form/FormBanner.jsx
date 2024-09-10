@@ -1,4 +1,4 @@
-import starsImg from './../assets/stars.png';
+import starsImg from './../../assets/stars.png';
 
 export default function FormBanner() {
     return (
