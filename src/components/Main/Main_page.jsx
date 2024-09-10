@@ -28,6 +28,22 @@ const itemPositions = [
 ];
 
 const Main_page = () => {
+  // Function to handle scrolling to the Timeline section
+  const scrollToTimeline = () => {
+    const timelineSection = document.getElementById("timeline-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Prizes section
+  const scrollToPrizes = () => {
+    const timelineSection = document.getElementById("prizes-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
   const galleryRef = useRef(null);
 
   useEffect(() => {
@@ -69,7 +85,9 @@ const Main_page = () => {
         Thrive in Chaos, Lead The Game
       </div>
       <div className="flex space-x-4">
-        <button className="bg-white text-black px-6 py-2 rounded-full flex items-center">
+        <button className="bg-white text-black px-6 py-2 rounded-full flex items-center"
+        onClick={scrollToTimeline} // Add click handler here
+        >
           Get Started
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +102,9 @@ const Main_page = () => {
             />
           </svg>
         </button>
-        <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center">
+        <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center"
+        onClick={scrollToPrizes} // Add click handler here
+        >
           View Prizes
           <svg
             xmlns="http://www.w3.org/2000/svg"
