@@ -11,13 +11,13 @@ const DownloadIcon = () => (
 
 const Card1 = () => {
   return (
-    <div className="relative w-[440px] h-[550px] overflow-hidden rounded-xl">
+    <div className="relative w-[440px] h-[550px] rounded-xl overflow-hidden">
       <img 
         src={Rulebook_Cover} 
         alt="Card Image" 
-        className="absolute inset-0 w-full h-full object-cover z-0" 
+        className="absolute inset-0 w-full h-full object-cover z-0 rounded-xl" 
       />
-      <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent">
+      <div className="w-full absolute inset-0 z-10 flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent">
         <div className="space-y-4">
   
           <button className="flex items-center justify-between w-[70%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto">

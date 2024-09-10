@@ -26,7 +26,7 @@ const Navbar = () => {
     }
   };
 
-  // Function to handle scrolling to the Timeline section
+  // Function to handle scrolling to the Prizes section
   const scrollToPrizes = () => {
     const timelineSection = document.getElementById("prizes-section"); // ID of the target section
     if (timelineSection) {
@@ -34,7 +34,7 @@ const Navbar = () => {
     }
   };
 
-  // Function to handle scrolling to the Timeline section
+  // Function to handle scrolling to the Rulebook section
   const scrollToRulebook = () => {
     const timelineSection = document.getElementById("rulebook-section"); // ID of the target section
     if (timelineSection) {
@@ -42,7 +42,7 @@ const Navbar = () => {
     }
   };
 
-  // Function to handle scrolling to the Timeline section
+  // Function to handle scrolling to the FAQ section
   const scrollToFaq = () => {
     const timelineSection = document.getElementById("faq-section"); // ID of the target section
     if (timelineSection) {
@@ -50,7 +50,7 @@ const Navbar = () => {
     }
   };
 
-  // Function to handle scrolling to the Timeline section
+  // Function to handle scrolling to the Gallery section
   const scrollToGallery = () => {
     const timelineSection = document.getElementById("gallery-section"); // ID of the target section
     if (timelineSection) {
@@ -58,7 +58,7 @@ const Navbar = () => {
     }
   };
 
-  // Function to handle scrolling to the Timeline section
+  // Function to handle scrolling to the Video section
   const scrollToVideo = () => {
     const timelineSection = document.getElementById("video-section"); // ID of the target section
     if (timelineSection) {
