@@ -4,13 +4,13 @@ import PropTypes from "prop-types"
 
 export function CardSpotlightDemo({date,round,time,day,content}) {
   return (
-    <CardSpotlight className="h-[450px] w-[446px] rounded-xl px-12 py-[50px]">
+    <CardSpotlight className="h-[450px] w-[446px] rounded-xl px-12 py-[50px] mx-auto">
       <div className="text-neutral-200 relative z-20">
         <div className="h-[86px] flex-col justify-start items-start gap-5 flex mb-[57px]">
-          <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
+          <div className="self-stretch text-start text-white text-[16px] md:text-[32px] font-['Helvetica Rounded']">
             {date}
           </div>
-          <div className="self-stretch text-white text-2xl font-['Helvetica Rounded'] pb-4">
+          <div className="self-stretch text-white  text-xl md:text-2xl font-['Helvetica Rounded'] pb-4">
             {round}
             <div className="py-5">
               <img src={whiteLine} />
@@ -19,31 +19,31 @@ export function CardSpotlightDemo({date,round,time,day,content}) {
         </div>
         <ul className="list-none  mt-1">
           <div className="justify-start items-center gap-2 inline-flex">
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               🕛
             </div>
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               {time}
             </div>
           </div>
           <div className="justify-start items-center gap-2 inline-flex mt-5">
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               📍
             </div>
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               Venue: Manekshaw Hall
             </div>
           </div>
           <div className="justify-start items-center gap-2 inline-flex mt-5">
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               🗓️
             </div>
-            <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
+            <div className="text-center text-white text-sm md:text-xl font-normal font-['Helvetica Light']">
               {day}
             </div>
           </div>
         </ul>
-        <p className="text-neutral-300 mt-4 relative z-20 text-sm mb-[72px]">
+        <p className="text-neutral-300 mt-4 relative z-20 text-sm  mb-[2em]md:mb-[72px]">
           {content}
         </p>
       </div>
