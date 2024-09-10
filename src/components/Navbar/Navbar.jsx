@@ -92,7 +92,7 @@ const Navbar = () => {
             }}
           ></div>
           <div className="flex flex-col gap-1">
-            <div className="cursor-pointer relative w-[56px] h-[56px] border border-[#976f6f42] rounded-xl bg-[rgba(255,255,255,0.03)] flex justify-center items-center"
+            <div className="cursor-pointer relative w-[56px] h-[56px] flex justify-center items-center"
             onClick={scrollToHome} // Add click handler here
             >
               <img
@@ -100,7 +100,8 @@ const Navbar = () => {
                 alt="Home"
                 className="inset-0 w-[24px] h-[24px] object-contain z-0"
               />
-              <div
+              {/* border border-[#976f6f42] rounded-xl bg-[rgba(255,255,255,0.03)] */}
+              {/* <div
                 className="absolute h-[56px] w-[56px]"
                 style={{
                   opacity: 0.6,
@@ -108,7 +109,7 @@ const Navbar = () => {
                     "radial-gradient(50% 50% at 50% 50%, #CC8B8B 0%, rgba(163, 59, 59, 0) 100%)",
                   filter: "blur(20px)",
                 }}
-              ></div>
+              ></div> */}
             </div>
             <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
             onClick={scrollToTimeline} // Add click handler here

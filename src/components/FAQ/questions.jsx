@@ -64,16 +64,16 @@ const Questions = () => {
               onClick={() => handleClick(index)}
             >
               <div className='flex items-center justify-between'>
-                <p className='font-bold text-[32px] text-white'>{String(faq.id).padStart(2, '0')}.</p>
-                <div className='flex-1 ml-4'>
-                  <p className='text-base'>{faq.question}</p>
+                <p className='font-bold text-[3em]md:text-[32px] text-white'>{String(faq.id).padStart(2, '0')}.</p>
+                <div className='flex-1 ml-3 w-[4em] justify-around gap-2'>
+                  <p className= ' text-[0.9em] md:text-[1em]'>{faq.question}</p>
                 </div>
-                <div className='absolute top-6 right-2 flex items-center justify-center text-white transition-transform duration-300'>
+                <div className='absolute  top-4 right-0 md:top-6 md:right-2 flex items-center justify-center text-white transition-transform duration-300'>
                   {activeIndex === index ? <MinusIcon /> : <PlusIcon />}
                 </div>
               </div>
               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${activeIndex === index ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className='mt-4 text-[16px]'>
+                <div className='mt-4 text-[13px] md:text-[16px]'>
                   <p>{faq.answer}</p>
                 </div>
               </div>

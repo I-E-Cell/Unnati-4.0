@@ -37,7 +37,7 @@ const Content = () => {
             href="https://www.aitecell.in/" // Replace with your URL
             target="_blank" // Opens link in a new tab
             rel="noopener noreferrer" // Security feature for external links
-            className="flex items-center justify-between lg:w-[55%] w-[40%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black self-start"
+            className="flex items-center justify-between md:w-[55%] w-[100%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black self-start"
           >
             <span>Visit I&E Cell</span>
             <ArrowIcon />
