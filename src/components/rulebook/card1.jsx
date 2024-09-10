@@ -11,7 +11,7 @@ const DownloadIcon = () => (
 
 const Card1 = () => {
   return (
-    <div className="relative w-[400px] h-[500px] overflow-hidden rounded-xl">
+    <div className="relative w-[440px] h-[550px] overflow-hidden rounded-xl">
       <img 
         src={Rulebook_Cover} 
         alt="Card Image" 

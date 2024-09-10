@@ -19,10 +19,10 @@ const Hero = () => {
         <div className="flex  justify-center w-[100%] items-center mt-[-150px]" id="prizes-section">
           <Prizes />
         </div>
-        <div className="w-[100%] flex justify-center items-center" id="rulebook-section">
+        <div className="flex justify-center items-center" id="rulebook-section">
           <RuleBook/>
         </div>
-        <div className="w-[100%] flex justify-center items-center" id="faq-section">
+        <div className="flex justify-center items-center" id="faq-section">
           <Faq/>
         </div>
         
