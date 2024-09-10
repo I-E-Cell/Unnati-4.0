@@ -7,6 +7,7 @@ import uberLogo from "../../../public/uber.png";
 import facebookLogo from "../../../public/fb.png";
 import cadburyLogo from "../../../public/cadbury.png";
 import Unnati from "../../../public/UNNATI.png";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 // import Form from "../Form/Form";
 
@@ -122,7 +123,8 @@ const Main_page = () => {
             />
           </svg>
         </button>
-        <a href="/form" className="lg:hidden">
+        <Link to='/form'>
+        <a  className="lg:hidden">
           <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center">
             Register Now
             <svg
@@ -139,6 +141,7 @@ const Main_page = () => {
             </svg>
           </button>
         </a>
+        </Link>
       </div>
       <div ref={galleryRef} className="absolute inset-0 pointer-events-none">
         {items.map((item, index) => (
