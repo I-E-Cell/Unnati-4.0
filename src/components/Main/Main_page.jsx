@@ -8,7 +8,7 @@ import facebookLogo from "../../../public/fb.png";
 import cadburyLogo from "../../../public/cadbury.png";
 import Unnati from "../../../public/UNNATI.png";
 import { gsap } from "gsap";
-import Form from "../Form/Form";
+// import Form from "../Form/Form";
 
 const items = [
   { img: amazonLogo, parallaxSpeed: 0.08 },
@@ -65,7 +65,7 @@ const Main_page = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-//gjgjgjgjgj
+  //gjgjgjgjgj
   return (
     <div
       className="w-[100%] h-[640px] flex flex-col items-center justify-center text-white relative"
@@ -73,7 +73,7 @@ const Main_page = () => {
         backgroundImage: `url(${backgroundImage})`, // Set background image
         backgroundSize: "contain", // Ensure it covers the entire div
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat" // Center the background
+        backgroundRepeat: "no-repeat", // Center the background
       }}
     >
       <div className="text-8xl font-thin tracking-wider mb-4">
@@ -86,8 +86,9 @@ const Main_page = () => {
         Thrive in Chaos, Lead The Game
       </div>
       <div className="flex space-x-4">
-        <button className="bg-white text-black px-6 py-2 rounded-full flex items-center"
-        onClick={scrollToTimeline} // Add click handler here
+        <button
+          className="bg-white text-black px-6 py-2 rounded-full flex items-center"
+          onClick={scrollToTimeline} // Add click handler here
         >
           Get Started
           <svg
@@ -103,8 +104,9 @@ const Main_page = () => {
             />
           </svg>
         </button>
-        <button className="bg-transparent border border-white px-6 py-2 rounded-full lg:flex items-center hidden"
-        onClick={scrollToPrizes} // Add click handler here
+        <button
+          className="bg-transparent border border-white px-6 py-2 rounded-full lg:flex items-center hidden"
+          onClick={scrollToPrizes} // Add click handler here
         >
           View Prizes
           <svg
@@ -120,23 +122,22 @@ const Main_page = () => {
             />
           </svg>
         </button>
-        <a href="/Form"className="lg:hidden">
-        <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center"
-        >
-          Register Now
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 ml-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
+        <a href="/form" className="lg:hidden">
+          <button className="bg-transparent border border-white px-6 py-2 rounded-full flex items-center">
+            Register Now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 ml-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
         </a>
       </div>
       <div ref={galleryRef} className="absolute inset-0 pointer-events-none">
