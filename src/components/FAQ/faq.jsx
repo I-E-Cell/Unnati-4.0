@@ -1,6 +1,6 @@
 // import React from 'react';
 import Questions from './questions';
-import Content from './Content';
+import Content from './content';
 
 const Faq = () => {
   return (

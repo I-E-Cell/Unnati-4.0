@@ -3,7 +3,7 @@ import CardSpotlight from "./card-spotlight";
 
 export function CardRuleBook() {
   return (
-    <CardSpotlight className="h-[500px] w-[400px] rounded-xl px-[16px]  py-[20px] text-white hover:text-white">
+    <CardSpotlight className="h-[550px] w-[440px] rounded-xl px-8 py-14 text-white hover:text-white">
       <div className=" flex flex-col h-full">
         <h2 className="text-lg z-40 font-bold mb-4">Important Guidelines</h2> 
         <div className="space-y-4 z-40 text-[12px]">
