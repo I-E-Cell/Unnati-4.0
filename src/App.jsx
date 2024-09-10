@@ -5,10 +5,10 @@ import FormPage from "./pages/FormPage";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path="/form" element={<FormPage />} />
-    </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/form" element={<FormPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
