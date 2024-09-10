@@ -19,11 +19,16 @@ const Card1 = () => {
       />
       <div className="w-full absolute inset-0 z-10 flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent">
         <div className="space-y-4">
-  
+        <a
+              href="https://drive.google.com/file/d/1UcT-Tnu7cgi7K6hwg6_UohH36uIBLwJV/view?usp=drive_link" // Replace with your actual link
+              target="_blank"
+              rel="noopener noreferrer" // Security for external links
+            >
           <button className="flex items-center justify-between w-[70%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto">
             <span>Download Rulebook</span>
             <DownloadIcon />
           </button>
+          </a>
         </div>
       </div>
     </div>
