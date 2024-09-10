@@ -51,10 +51,16 @@ const SideBar = () => {
       >
         <div className="absolute inset-0 z-10 flex flex-col justify-end p-6">
           <div className="space-y-4">
-            <button className="flex items-center justify-between w-[100%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto">
+            {/* Anchor tag for redirection */}
+            <a
+              href="https://drive.google.com/file/d/1UcT-Tnu7cgi7K6hwg6_UohH36uIBLwJV/view?usp=drive_link" // Replace with your actual link
+              target="_blank"
+              rel="noopener noreferrer" // Security for external links
+              className="flex items-center justify-between w-[100%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto"
+            >
               <span>Download Rulebook</span>
               <DownloadIcon />
-            </button>
+            </a>
           </div>
         </div>
       </div>

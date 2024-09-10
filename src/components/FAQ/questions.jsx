@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 // SVGs for plus and minus signs
 const PlusIcon = () => (
