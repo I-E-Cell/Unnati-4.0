@@ -11,7 +11,8 @@ export default function Form() {
     const { mutate } = useMutation({
         mutationKey: ['response'],
         mutationFn: async (data) => insertResponseApi(data),
-        onSuccess: onSuccess
+        onSuccess: onSuccess,
+        onError: onError
     });
 
     const { register, getValues, handleSubmit, formState: { errors }, reset } = useForm({
@@ -39,6 +40,10 @@ export default function Form() {
     function onSuccess() {
         reset();
         toast.success('Response submitted successfully!');
+    }
+
+    function onError() {
+        toast.error('Internal Server Error!');
     }
 
     function onSubmit() {
