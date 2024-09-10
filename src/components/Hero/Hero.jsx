@@ -7,7 +7,7 @@ import RuleBook from "../rulebook/ruleBook";
 
 const Hero = () => {
   return (
-    <div className="h-[6180px] w-[1201px]">
+    <div className="h-[6180px] w-[1201px] mx-auto">
       <div className="flex flex-col mr-[75px]">
         <div className="mt-[100px] mb-[100px]">
           <Main_page />

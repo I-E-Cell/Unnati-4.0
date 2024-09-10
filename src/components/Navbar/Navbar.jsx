@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div>
+    <div className=" h-[90vh]">
       <div className="w-[104px] h-[811px] py-7 bg-black rounded-[28px] ml-[32px] mt-[13px] mb-[13px] flex-col justify-between items-center inline-flex">
         <div className="flex-col justify-start items-center gap-4 flex">
           <div className="w-12 justify-start items-center gap-2.5 inline-flex">

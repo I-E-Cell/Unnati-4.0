@@ -51,7 +51,7 @@ const Main_page = () => {
 
   return (
     <div
-      className="w-[1071px] h-[640px] flex flex-col items-center justify-center text-white relative"
+      className="w-[971px] h-[640px] flex flex-col items-center justify-center text-white relative mx-auto"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="text-8xl font-thin tracking-wider mb-4">
