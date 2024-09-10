@@ -12,8 +12,7 @@ const Bento_Text = () => {
           </div>
         </div>
         <div className="self-stretch mt-[24px] text-white text-base font-normal font-['Helvetica Light']">
-          Lorem ipsum dolor sit amet consectetur. Amet augue lacus morbi
-          fringilla enim cras ipsum ut. Duis nulla eget quam faucibus sit diam.
+        Take a look at the unforgettable moments and highlights from the event.
         </div>
       </div>
     </div>
