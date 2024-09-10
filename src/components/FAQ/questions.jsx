@@ -68,7 +68,7 @@ const Questions = () => {
                 <div className='flex-1 ml-3 w-[4em] justify-around gap-2'>
                   <p className= ' text-[0.9em] md:text-[1em]'>{faq.question}</p>
                 </div>
-                <div className='absolute  top-7 right-0 md:top-6 md:right-2 flex items-center justify-center text-white transition-transform duration-300'>
+                <div className='absolute  top-4 right-0 md:top-6 md:right-2 flex items-center justify-center text-white transition-transform duration-300'>
                   {activeIndex === index ? <MinusIcon /> : <PlusIcon />}
                 </div>
               </div>
