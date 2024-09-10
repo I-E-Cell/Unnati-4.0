@@ -1,51 +1,170 @@
+import logo from "../../assets/ecell_nav.png";
+import Home from "../../assets/home.svg";
+import Timeline from "../../assets/timeline.svg";
+import Prizes from "../../assets/card_giftcard.svg";
+import Rulebook from "../../assets/rulebook.svg";
+import Faq from "../../assets/faq.svg";
+import Gallery from "../../assets/gallery.svg";
+import Video from "../../assets/video.svg";
+
+
+
 const Navbar = () => {
+  // Function to handle scrolling to the Hero section
+  const scrollToHome = () => {
+    const timelineSection = document.getElementById("hero-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToTimeline = () => {
+    const timelineSection = document.getElementById("timeline-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToPrizes = () => {
+    const timelineSection = document.getElementById("prizes-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToRulebook = () => {
+    const timelineSection = document.getElementById("rulebook-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToFaq = () => {
+    const timelineSection = document.getElementById("faq-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToGallery = () => {
+    const timelineSection = document.getElementById("gallery-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
+  // Function to handle scrolling to the Timeline section
+  const scrollToVideo = () => {
+    const timelineSection = document.getElementById("video-section"); // ID of the target section
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+    }
+  };
+
   return (
-    <div className=" h-[90vh]">
-      <div className="w-[104px] h-[811px] py-7 bg-black rounded-[28px] ml-[32px] mt-[13px] mb-[13px] flex-col justify-between items-center inline-flex">
-        <div className="flex-col justify-start items-center gap-4 flex">
-          <div className="w-12 justify-start items-center gap-2.5 inline-flex">
-            <div className="w-[30px] h-[30px] relative rounded-lg border border-white">
-              <div className="w-[14.25px] h-[0px] left-[7.87px] top-[9.30px] absolute border-2 border-white"></div>
-              <div className="w-[14.25px] h-[0px] left-[7.87px] top-[15px] absolute border-2 border-white"></div>
-              <div className="w-[14.25px] h-[0px] left-[7.87px] top-[20.70px] absolute border-2 border-white"></div>
+    <div>
+      <div className="w-[100%] h-[97vh] py-7 bg-[#000] rounded-[28px] mt-[13px] mb-[13px] flex-col justify-between items-center inline-flex">
+        <div className="w-[56px] flex flex-col gap-4 justify-center items-center">
+          <a
+            href="https://www.aitecell.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div
+              className="rounded-full w-[48px] h-[48px] cursor-pointer"
+              style={{
+                backgroundImage: `url(${logo})`, // Set background image
+                backgroundSize: "cover", // Ensure it covers the entire div
+                backgroundPosition: "center", // Center the background
+              }}
+            ></div>
+          </a>
+          <div
+            className="w-[90.02px] h-[1.006px] opacity-[50%]"
+            style={{
+              background:
+                "radial-gradient(50% 50% at 50% 50%, #FFF 0%, rgba(0, 0, 0, 0) 100%)",
+            }}
+          ></div>
+          <div className="flex flex-col gap-1">
+            <div className="cursor-pointer relative w-[56px] h-[56px] border border-[#976f6f42] rounded-xl bg-[rgba(255,255,255,0.03)] flex justify-center items-center"
+            onClick={scrollToHome} // Add click handler here
+            >
+              <img
+                src={Home}
+                alt="Home"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+              <div
+                className="absolute h-[56px] w-[56px]"
+                style={{
+                  opacity: 0.6,
+                  background:
+                    "radial-gradient(50% 50% at 50% 50%, #CC8B8B 0%, rgba(163, 59, 59, 0) 100%)",
+                  filter: "blur(20px)",
+                }}
+              ></div>
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToTimeline} // Add click handler here
+            >
+              <img
+                src={Timeline}
+                alt="Timeline"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToPrizes} // Add click handler here
+            >
+              <img
+                src={Prizes}
+                alt="Prizes"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToRulebook} // Add click handler here
+            >
+              <img
+                src={Rulebook}
+                alt="Rulebook"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToFaq} // Add click handler here
+            >
+              <img
+                src={Faq}
+                alt="FAQs"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToGallery} // Add click handler here
+            >
+              <img
+                src={Gallery}
+                alt="Unnati Moments"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
+            </div>
+            <div className="cursor-pointer w-[56px] h-[56px] flex justify-center items-center"
+            onClick={scrollToVideo} // Add click handler here
+            >
+              <img
+                src={Video}
+                alt="Unnati Moments"
+                className="inset-0 w-[24px] h-[24px] object-contain z-0"
+              />
             </div>
           </div>
-          <div className="w-12 h-12 relative">
-            <div className="w-12 h-12 left-0 top-0 absolute bg-[#f2c7ba] rounded-full"></div>
-            <img
-              className="w-12 h-12 left-0 top-0 absolute rounded-[36.22px]"
-              src="https://via.placeholder.com/48x48"
-            />
-          </div>
-          <div className="w-[90.02px] h-px opacity-30 bg-white"></div>
-          <div className="h-56 flex-col justify-start items-start gap-1 flex">
-            <div className="h-56 flex-col justify-center items-center flex">
-              <div className="w-14 px-5 py-4 bg-white/5 rounded-xl border border-[#8039ec] justify-center items-center gap-4 inline-flex">
-                <div className="w-[293px] h-14 opacity-50 bg-[#cc8a8a] blur-2xl"></div>
-                <div className="w-6 h-6 relative shadow"></div>
-              </div>
-              <div className="w-14 px-5 py-4 rounded-xl border justify-center items-center gap-4 inline-flex">
-                <div className="w-6 h-6 relative"></div>
-              </div>
-              <div className="w-14 px-5 py-4 rounded-xl border justify-center items-center gap-4 inline-flex">
-                <div className="w-6 h-6 relative">
-                  <img
-                    className="w-2.5 h-[3.04px] left-[5.81px] top-[3px] absolute"
-                    src="https://via.placeholder.com/10x3"
-                  />
-                  <img
-                    className="w-[19.50px] h-[15.50px] left-[2.25px] top-[5.89px] absolute"
-                    src="https://via.placeholder.com/19x15"
-                  />
-                  <div className="w-[1.50px] h-[1.50px] left-[15.75px] top-[12.89px] absolute bg-white/60 rounded-full"></div>
-                </div>
-              </div>
-              <div className="w-14 px-5 py-4 rounded-xl border justify-center items-center gap-4 inline-flex">
-                <div className="w-6 h-6 relative"></div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[90.02px] h-px opacity-30 bg-white"></div>
         </div>
       </div>
     </div>

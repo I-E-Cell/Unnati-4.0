@@ -51,8 +51,13 @@ const Main_page = () => {
 
   return (
     <div
-      className="w-[971px] h-[640px] flex flex-col items-center justify-center text-white relative mx-auto"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="w-[100%] h-[640px] flex flex-col items-center justify-center text-white relative"
+      style={{
+        backgroundImage: `url(${backgroundImage})`, // Set background image
+        backgroundSize: "contain", // Ensure it covers the entire div
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat" // Center the background
+      }}
     >
       <div className="text-8xl font-thin tracking-wider mb-4">
         <span className="text-blue-400">

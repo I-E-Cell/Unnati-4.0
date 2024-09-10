@@ -1,16 +1,17 @@
 import CardSpotlight from "./card-spotlight";
 import whiteLine from "../../public/whiteline.png";
+import PropTypes from "prop-types"
 
-export function CardSpotlightDemo() {
+export function CardSpotlightDemo({date,round,time,day,content}) {
   return (
     <CardSpotlight className="h-[450px] w-[446px] rounded-xl px-12 py-[50px]">
       <div className="text-neutral-200 relative z-20">
         <div className="h-[86px] flex-col justify-start items-start gap-5 flex mb-[57px]">
           <div className="self-stretch text-start text-white text-[32px] font-['Helvetica Rounded']">
-            13 September 2024
+            {date}
           </div>
           <div className="self-stretch text-white text-2xl font-['Helvetica Rounded'] pb-4">
-            Round 1- Brand Battle
+            {round}
             <div className="py-5">
               <img src={whiteLine} />
             </div>
@@ -22,7 +23,7 @@ export function CardSpotlightDemo() {
               🕛
             </div>
             <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
-              Time: 5:00pm
+              {time}
             </div>
           </div>
           <div className="justify-start items-center gap-2 inline-flex mt-5">
@@ -38,15 +39,22 @@ export function CardSpotlightDemo() {
               🗓️
             </div>
             <div className="text-center text-white text-xl font-normal font-['Helvetica Light']">
-              Day: Friday
+              {day}
             </div>
           </div>
         </ul>
         <p className="text-neutral-300 mt-4 relative z-20 text-sm mb-[72px]">
-          Lorem ipsum dolor sit amet consectetur. Eget a vitae blandit lacus
-          dignissim pellentesque. lacus dignissim pellentesque.
+          {content}
         </p>
       </div>
     </CardSpotlight>
   );
+}
+
+CardSpotlightDemo.propTypes = {
+  date : PropTypes.string,
+  round: PropTypes.string,
+  time: PropTypes.string,
+  day: PropTypes.string,
+  content: PropTypes.string
 }

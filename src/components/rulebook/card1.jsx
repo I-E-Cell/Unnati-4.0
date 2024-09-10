@@ -1,5 +1,5 @@
 // import React from 'react';
-import imgURL from '../../assets/Unnati_image.png'; // Make sure the path is correct
+import Rulebook_Cover from '../../assets/Rulebook_cover.png'; // Make sure the path is correct
 
 const DownloadIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -11,11 +11,11 @@ const DownloadIcon = () => (
 
 const Card1 = () => {
   return (
-    <div className="relative w-[443px] h-[554px] overflow-hidden rounded-lg">
+    <div className="relative w-[440px] h-[550px] overflow-hidden rounded-xl">
       <img 
-        src={imgURL} 
+        src={Rulebook_Cover} 
         alt="Card Image" 
-        className="absolute inset-0 w-full h-full object-contain z-0" 
+        className="absolute inset-0 w-full h-full object-cover z-0" 
       />
       <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent">
         <div className="space-y-4">

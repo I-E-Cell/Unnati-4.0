@@ -4,14 +4,14 @@ import SideBar from "./components/SideBar/SideBar";
 
 function App() {
   return (
-    <div className="flex flex-row no-scrollbar">
-      <div className="hidden md:hidden lg:block fixed">
+    <div className="flex gap-[2%] no-scrollbar">
+      <div className=" w-[7%] hidden lg:block fixed left-[20px]">
         <Navbar />
       </div>
-      <div className="hidden md:hidden lg:block fixed right-0">
+      <div className="w-[20%] hidden  lg:block fixed right-[20px]">
         <SideBar />
       </div>
-      <div className="overflow-y-auto flex justify-center ml-[230px] no-scrollbar">
+      <div className="lg:w-[69%] fixed w-[98vw] rounded-3xl mx-[10px] my-[13px] lg:ml-[9%] overflow-x-hidden overflow-y-scroll flex justify-center items-center no-scrollbar">
         <Hero/>
       </div>
     </div>
