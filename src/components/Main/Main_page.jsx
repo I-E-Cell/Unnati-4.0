@@ -64,7 +64,7 @@ const Main_page = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-
+//gjgjgjgjgj
   return (
     <div
       className="w-[100%] h-[640px] flex flex-col items-center justify-center text-white relative"
