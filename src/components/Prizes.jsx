@@ -1,6 +1,6 @@
-import c1 from "../../public/orange_card_flipped.png";
+import c1 from "../../public/Frame 3507.png";
 import c2 from "../../public/pink_card_flipped.png";
-import c3 from "../../public/blue_card_flipped.png";
+import c3 from "../../public/Frame 3536.png";
 
 const Prizes = () => {
   return (
