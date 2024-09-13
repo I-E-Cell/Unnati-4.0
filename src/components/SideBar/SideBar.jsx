@@ -49,10 +49,9 @@ const SideBar = () => {
       >
         <div className="absolute inset-0 z-10 flex flex-col justify-end p-6">
           <div className="space-y-4">
-            <NavLink to='/form' className="flex items-center justify-between w-[75%] bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto">
-              <span>Register Now</span>
-              <SideArrowIcon />
-            </NavLink>
+            <div className="flex items-center justify-between bg-white backdrop-blur-md rounded-full py-3 px-6 text-black m-auto">
+              <span>Registerations are closed!</span>
+            </div>
           </div>
         </div>
       </div>
